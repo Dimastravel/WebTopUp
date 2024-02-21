@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKK STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="card.css">
+    <style>
+        .mySlides {display:none;}
+     </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="index.html">PKK STORE</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html#beranda">Beranda</a></li>
+                <li><a href="tentangkami.html#tentangkami">Tentang Kami</a></li>
+                <li><a href="kontak.html#kontak">Kontak</a></li>
+            </ul>
+            <div class="search-bar">
+                <form action="">
+                    <input type="text" placeholder="Cari">
+                    <button type="button">Cari</button>
+                </form>
+            </div>
+        </div>
+        <div class="display-container">
+            <img class="mySlides" src="images/ff.jpg">
+            <img class="mySlides" src="images/mlbb.jpg">
+            <img class="mySlides" src="images/pubg.jpg">
+            <img class="mySlides" src="images/valorant.jpg">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+<div class="listcard">
+    <div class="card-container">
+        <a href="freefire.html" class="hero-image-container">
+          <img class="hero-image" src="images/ff.jpg" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">Free Fire</a></h1>
+          <p align="justify">Free Fire adalah game battle royale yang populer, dimainkan oleh 50 pemain di pulau terpencil. Pemain harus bertahan hidup dan menjadi yang terakhir bertahan untuk memenangkan permainan.</p>
+        </main>
+    </div>
+    <div class="card-container">
+        <a href="mlbb.html" class="hero-image-container">
+          <img class="hero-image" src="images/mlbb.jpg" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">Mobile Legends: Bang Bang</a></h1>
+          <p align="justify">MLBB adalah game mobile dengan genre Multiplayer Online Battle Arena (MOBA) yang memungkinkan pemain untuk bertarung dalam tim 5 lawan 5. Tujuannya adalah menghancurkan markas lawan.</p>
+        </main>
+    </div>
+    <div class="card-container">
+        <a href="pubg.html" class="hero-image-container">
+          <img class="hero-image" src="images/pubg.jpg" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">PUBG</a></h1>
+          <p align="justify">PUBG adalah game battle royale di mana 100 pemain terjun ke pulau, mencari senjata dan perlengkapan, dan bertarung untuk menjadi yang terakhir bertahan.</p>
+        </main>
+    </div>
+    <div class="card-container">
+        <a href="valorant.html" class="hero-image-container">
+          <img class="hero-image" src="images/valorant.jpg" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">Valorant</a></h1>
+          <p> Valorant adalah game first-person shooter (FPS) taktis yang menekankan kerjasama tim dan penggunaan keterampilan unik karakter. Pemain dapat memilih agen dengan kemampuan khusus dalam pertempuran 5 lawan 5.</p>
+        </main>
+    </div>
+    <div class="card-container">
+        <a href="genshin.html" class="hero-image-container">
+          <img class="hero-image" src="images/genshin.jpg" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">Genshin Impact</a></h1>
+          <p align="justify">Genshin Impact adalah game action role-playing (ARPG) dengan elemen open-world dan eksplorasi. Pemain dapat menjelajahi dunia fantasi Teyvat, menggunakan berbagai karakter dengan keterampilan unik, dan menyelesaikan berbagai misi..</p>
+        </main>
+    </div>
+    <div class="card-container">
+        <a href="codm.html" class="hero-image-container">
+          <img class="hero-image" src="images/codm.jpg" alt="Spinning glass cube"/>
+        </a>
+        <main class="main-content">
+          <h1><a href="#">Call of Duty: Mobile</a></h1>
+          <p align="justify">CODM adalah game first-person shooter (FPS) yang menawarkan berbagai mode permainan, termasuk battle royale, multiplayer, dan mode cerita pendek. Pemain dapat memilih dari beragam senjata dan mengikuti berbagai misi dalam permainan.</p>
+        </main>
+    </div>
+</div>
+</nav>
+</body>
+</html>
